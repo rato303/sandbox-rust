@@ -43,6 +43,27 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "Debug executable 'input_args'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=input_args",
+                    "--package=sandbox-rust"
+                ],
+                "filter": {
+                    "name": "input_args",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "hoge",
+                "moge"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug unit tests in executable 'sandbox-rust'",
             "cargo": {
                 "args": [
