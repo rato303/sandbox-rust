@@ -7,15 +7,33 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'sandbox-rust'",
+            "name": "Debug executable 'hello'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=sandbox-rust",
+                    "--bin=hello",
                     "--package=sandbox-rust"
                 ],
                 "filter": {
-                    "name": "sandbox-rust",
+                    "name": "hello",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'main'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=main",
+                    "--package=sandbox-rust"
+                ],
+                "filter": {
+                    "name": "main",
                     "kind": "bin"
                 }
             },
