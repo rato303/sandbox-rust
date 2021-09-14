@@ -18,3 +18,7 @@ path = "src/hello.rs"
 [[bin]]
 name = "input_args"
 path = "src/input_args.rs"
+
+[[bin]]
+name = "lib"
+path = "src/lib.rs"
